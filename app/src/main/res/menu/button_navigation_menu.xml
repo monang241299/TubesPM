@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemHome"
+        android:icon="@drawable/Home"
+        android:title="Home" />
+    <item
+        android:id="@+id/itemDirektori"
+        android:icon="@drawable/dir"
+        android:title="Direktori" />
+    <item
+        android:id="@+id/itemNotif"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Notifikasi" />
+    <item
+        android:id="@+id/itemProfil"
+        android:icon="@drawable/profil"
+        android:title="Profil" />
+</menu>

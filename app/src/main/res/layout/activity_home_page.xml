@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,35 +7,133 @@
     android:orientation="vertical"
     tools:context=".home_page">
 
-    <LinearLayout
-        android:background="@color/black"
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/button_navigation_menu"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:orientation="horizontal">
+        android:layout_height="56sp"
+        android:backgroundTint="#000000"
+        app:itemIconSize="34dp"
+        app:itemIconTint="@color/black"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/button_navigation_menu" />
 
-        <ImageButton
-            android:layout_width="65dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            app:srcCompat="@drawable/bg2"/>
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_navigation_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <ImageButton
-            android:layout_width="65dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="110dp"
-            app:srcCompat="@drawable/ic_search"/>
+    </FrameLayout>
 
-        <ImageButton
-            android:layout_width="65dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/oc_pesan"
-            />
-        <ImageButton
-            android:layout_width="65dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20dp"
-            />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/button_up_menu"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:backgroundTint="#000000"
+        app:itemIconSize="38dp"
+        app:itemIconTint="@color/black"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/button_up_menu" />
 
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:background="@color/button"
+        android:paddingTop="10dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/usu1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="85dp" />
 
-</LinearLayout>
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/button"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="10sp"
+        android:text="Dies Natalis USU"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:background="@color/button"
+        android:paddingTop="10dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/usu1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="625dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:background="@color/button"
+        android:paddingTop="10dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/usu1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/button"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="10sp"
+        android:text="Dies Natalis USU"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="553dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/button"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="10sp"
+        android:text="Pelakasanaan dies natalis usu berjalan dengan lancar  yang dihadiri langsung oleh rektor usu"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="589dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="396dp"
+        android:layout_height="46dp"
+        android:background="@color/button"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Pelakasanaan dies natalis usu berjalan dengan lancar yang dihadiri langsung oleh rektor usu "
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="306dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/iteem_alumngram"
+        android:icon="@drawable/bg2"
+        android:title="Alumngram" />
+    <item
+        android:id="@+id/itemSearch"
+        android:icon="@drawable/ic_search"
+        android:title="Search" />
+    <item
+        android:id="@+id/itemPesan"
+        android:icon="@drawable/oc_pesan"
+        android:title="Pesan" />
+    <item
+        android:id="@+id/itemProfil"
+        android:icon="@drawable/profil"
+        android:title="Profil" />
+</menu>
